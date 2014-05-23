@@ -10,7 +10,7 @@ class ubuntu::bashrc ($owner ='vagrant', $group = 'vagrant', $shared_folder='/va
 	else {
 		$uhome = "/home/${owner}"
 	}
-	file {"${uhome}/.bashrc":
+	file {"${uhome}/.bash_profile":
 		ensure  => present,
 		owner   => $owner,
 		group   => $group,

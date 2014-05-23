@@ -12,5 +12,4 @@ class ubuntu::basic {
 	package { "unzip":
 		ensure => present,
 	}
-
 }
